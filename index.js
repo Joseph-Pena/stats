@@ -53,16 +53,34 @@ console.log("The Mean of the array is: " + getMean(Math.floor));
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  // TODO
+  let mini = Number.MAX_SAFE_INTEGER;
+
+  for (let num of b) {
+    if (num < mini) mini = num;
+  }
+
+  console.log(mini);
 }
+
+let b = [2, 6, 7, 9];
+getMin(b);
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
-  // TODO
+  let max = Number.MIN_SAFE_INTEGER;
+
+  for (let num of c) {
+    if (num > max) max = num;
+  }
+
+  console.log(max);
 }
+
+let c = [2, 6, 7, 9];
+getMax(c);
 
 /**
  * @param {number[]} numbers an array of integers
