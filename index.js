@@ -35,8 +35,18 @@ console.log("The sum of the array is: " + getSum(arr));
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
-  // TODO
+  let arr = [2, 5, 8, 4, 7, 6];
+
+  let sum = 0;
+
+  for (let num of arr) {
+    sum += num;
+  }
+
+  return Math.floor(sum / arr.length);
 }
+
+console.log("The Mean of the array is: " + getMean(Math.floor));
 
 /**
  * @param {number[]} numbers an array of integers
