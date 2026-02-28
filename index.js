@@ -59,11 +59,11 @@ function getMin(numbers) {
     if (num < mini) mini = num;
   }
 
-  console.log(mini);
+  return mini;
 }
 
 let b = [2, 6, 7, 9];
-getMin(b);
+console.log("Min is: " + getMin(b));
 
 /**
  * @param {number[]} numbers an array of integers
@@ -76,19 +76,35 @@ function getMax(numbers) {
     if (num > max) max = num;
   }
 
-  console.log(max);
+  return max;
 }
 
 let c = [2, 6, 7, 9];
-getMax(c);
+console.log("Max is: " + getMax(c));
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  // TODO
+  let mini = Number.MAX_SAFE_INTEGER;
+
+  for (let num of d) {
+    if (num < mini) mini = num;
+  }
+
+  let max = Number.MIN_SAFE_INTEGER;
+
+  for (let num of d) {
+    if (num > max) max = num;
+  }
+
+  let range = max - mini;
+  return range;
 }
+
+let d = [2, 6, 7, 9];
+console.log("range is: " + getRange(d));
 
 /**
  * @param {number[]} numbers an array of integers
