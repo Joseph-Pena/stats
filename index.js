@@ -17,9 +17,18 @@ getLength();
  * @param {number[]} numbers an array of integers
  * @returns {number} the sum of the numbers
  */
+
 function getSum(numbers) {
-  // TODO
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) sum += arr[i];
+
+  return sum;
 }
+
+let arr = [35, 68, 10];
+
+console.log("The sum of the array is: " + getSum(arr));
 
 /**
  * @param {number[]} numbers an array of integers
