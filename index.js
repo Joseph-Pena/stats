@@ -2,9 +2,16 @@
  * @param {number[]} numbers an array of integers
  * @returns {number} the length of the array
  */
+
 function getLength(numbers) {
-  // TODO
+  let a = [20, 50, 30];
+
+  let length = a.length;
+
+  console.log("Array Length: " + length);
 }
+
+getLength();
 
 /**
  * @param {number[]} numbers an array of integers
@@ -99,7 +106,7 @@ function describeNumbers(numbers) {
 
 const userInputString = prompt(
   "Please enter some integers separated by commas.",
-  "28,-15,30,975,400"
+  "28,-15,30,975,400",
 );
 const numbers = convertStringToNumbers(userInputString);
 describeNumbers(numbers);
