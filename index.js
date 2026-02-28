@@ -111,16 +111,24 @@ console.log("range is: " + getRange(d));
  * @returns {number[]} the even numbers in the array
  */
 function getEvens(numbers) {
-  // TODO
+  let arr = [1, 2, 3, 4, 5, 6];
+  let evenNumbers = arr.filter((num) => num % 2 === 0);
+  return evenNumbers;
 }
+
+console.log("Even numbers are: " + getEvens(arr));
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  // TODO
+  let arr = [1, 2, 3, 4, 5, 6];
+  let oddNumbers = arr.filter((num) => num % 2 !== 0);
+  return oddNumbers;
 }
+
+console.log("Odd numbers are: " + getOdds(arr));
 
 // === READ BUT DO NOT EDIT THE CODE BELOW ===
 
